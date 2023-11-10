@@ -1,0 +1,5 @@
+com\cabinas\cabinas\CabinasApplication.class
+com\cabinas\cabinas\Repositorio\ClienteRepositorio.class
+com\cabinas\cabinas\Modelo\Cliente.class
+com\cabinas\cabinas\Controlador\ClienteControlador.class
+com\cabinas\cabinas\Servicio\ClienteServicio.class
