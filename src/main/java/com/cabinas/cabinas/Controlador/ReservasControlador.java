@@ -31,7 +31,7 @@ public class ReservasControlador {
     @RequestMapping("/nuevaReserva")
     public String mostrarNuevoFormularioReserva (Model modelo){
     Reservas nuevaReserva=new Reservas();
-    modelo.addAttribute(nuevaReserva);
+    modelo.addAttribute(nuevaReserva );
     return "nuevaReserva";
     }
     
