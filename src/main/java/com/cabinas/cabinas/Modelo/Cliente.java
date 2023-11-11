@@ -15,13 +15,16 @@ public class Cliente {
 
     @Column(nullable = false, length = 50, unique = true)
     private int cedula;
+    
     @Column(nullable = false, length = 50)
     private String nombre;
 
     @Column(nullable = false, length = 50)
     private String apellidos;
+    
     @Column(nullable = false, length = 50, unique = true)
     private String correo;
+    
     @Column(nullable = false, length = 50)
     private String telefono;
 

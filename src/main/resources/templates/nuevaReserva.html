@@ -16,31 +16,33 @@
                 <ul class="navbar-nav mr-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/nuevo">Agregar Cliente</a>
+                        <a class="nav-link" href="/nuevaReserva">Agregar Reserva</a>
                     </li>
 
                 </ul>
             </div>
         </nav>
         <br>
-
+        <!-- comment -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
-                    <h1 class="text-center">Registro de Cliente</h1>
+                    <h1 class="text-center">Reservas</h1>
                     <div class="card-body">
-                        <form th:action="@{/guardar}" th:object="${cliente}" method="post">
+                        <form th:action="@{/guardarReserva}" th:object="${reservas}" method="post">
                             <div class="form-group">
-                                <label>Nombre :</label>
-                                <input type="text" name="nombre" th:field="*{nombre}" class="form-control" placeholder="Digite el Nombre" required>
-                                <label>Apellido :</label>
-                                <input type="text" name="apellidos" th:field="*{apellidos}" class="form-control" placeholder="Digite sus Apellidos" required>
-                                <label>Cedula :</label>
-                                <input type="number" name="cedula" th:field="*{cedula}" class="form-control" placeholder="Digite su Cedula" required>
-                                <label>Correo :</label>
-                                <input type="text" name="correo" th:field="*{correo}" class="form-control" placeholder="Digite su Correo Electronico" required>
-                                <label>Telefono :</label>
-                                <input type="text" name="telefono" th:field="*{telefono}" class="form-control" placeholder="Digite su numero de telefono" required>
+                                <!-- comment 
+                                <label>ID Reserva :</label>
+                                <input type="number" name="id_reserva" th:field="*{id_reserva}" class="form-control" placeholder="Digite el Nombre" required>
+                                <label>ID Cliente :</label>
+                                <input type="number" name="id_cliente" th:field="*{id_cliente}" class="form-control" placeholder="Digite sus Apellidos" required>
+                                -->
+                                <label>Tours :</label> 
+                                <input type="text" name="id_tours" th:field="*{id_tours}" class="form-control">
+                                <label for="fecha">Fecha (yyyy-MM-dd):</label>
+                                <input type="text" name="fecha" th:field="*{fecha}" class="form-control" placeholder="Digite su Correo Electronico" required>
+                                <label>Comentarios :</label>
+                                <input type="text" name="comentarios" th:field="*{comentarios}" class="form-control" placeholder="Digite su numero de telefono" required>
                                 <br>
                                 <div class="box-footer">
                                     <button class="btn btn-success">Guardar</button>
