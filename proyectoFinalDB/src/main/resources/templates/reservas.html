@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html Xmlns: th="http://www.thymeleaf.org">
+    <head>
+        <title>Control de Cliente</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="/reservas">Control de Reservas</a>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/nuevaReserva">Agregar Reserva</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/reservas">Reservas</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <nav class="container text-center">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">ID Reservas</th>
+                        <th scope="col">ID Cliente</th>
+                        <th scope="col">ID Tours</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Comentarios</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="reservas : ${listaReservas}">
+                        <td th:text="${reservas.id_reserva}"></td>
+                        <td th:text="${reservas.id_cliente}"></td>
+                        <td th:text="${reservas.id_tours}"></td>
+                        <td th:text="${reservas.fecha}"></td>
+                        <td th:text="${reservas.comentarios}"></td>
+                        <td>
+                            <a class="btn btn-primary" th:href="@{'/editarReserva/' + ${reservas.id_cliente}}">Editar</a>
+                            &nbsp;
+                            <a class="btn btn-danger" th:href="@{'/eliminarReserva/' + ${reservas.id_cliente}}">Eliminar</a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </tbody>
+    </table>
+</nav>
+</body>
+</html>
