@@ -10,26 +10,24 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="/reservas">Control de Reservas</a>
-
+            <a class="navbar-brand" href="/">Control de Clientes</a>
+            <a class="navbar-brand" href="/tours">Control de Tours</a>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="/nuevaReserva">Agregar Reserva</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Registro Clientes</a>
-                    </li>
 
                 </ul>
             </div>
         </nav>
         <br>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="padding-right: 50%">
+            <a class="btn btn-success" href="/nuevaReserva">Agregar Reserva</a>
+        </div>
+        <br>
         <nav class="container text-center">
             <table class="table">
                 <thead class="thead-dark">
+                    <div style="color: blue"><h1>Lista de Reservas</h1></div>
                     <tr>
                         <th scope="col">ID Reservas</th>
                         <th scope="col">ID Cliente</th>

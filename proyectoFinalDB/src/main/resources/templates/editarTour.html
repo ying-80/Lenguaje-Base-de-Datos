@@ -9,12 +9,15 @@
     <body>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="/">Registro de Clientes</a>
+            <a class="navbar-brand" href="/">Modificar Reserva</a>
 
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
 
+                    <li class="nav-item">
+                        <a class="nav-link" href="/nuevaReserva">Modificar Reserva</a>
+                    </li>
 
                 </ul>
             </div>
@@ -24,20 +27,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
-                    <h1 class="text-center">Registro de Cliente</h1>
+                    <h1 class="text-center">Registro de Reservas</h1>
                     <div class="card-body">
-                        <form th:action="@{/guardar}" th:object="${cliente}" method="post">
+                        <form th:action="@{/guardarTour}" th:object="${tours}" method="post">
+
                             <div class="form-group">
-                                <label>Nombre :</label>
-                                <input type="text" name="nombre" th:field="*{nombre}" class="form-control" placeholder="Digite el Nombre" required>
-                                <label>Apellido :</label>
-                                <input type="text" name="apellidos" th:field="*{apellidos}" class="form-control" placeholder="Digite sus Apellidos" required>
-                                <label>Cedula :</label>
-                                <input type="text" name="cedula" th:field="*{cedula}" class="form-control" placeholder="Digite su Cedula" required>
-                                <label>Correo :</label>
-                                <input type="text" name="correo" th:field="*{correo}" class="form-control" placeholder="Digite su Correo Electronico" required>
-                                <label>Telefono :</label>
-                                <input type="text" name="telefono" th:field="*{telefono}" class="form-control" placeholder="Digite su numero de telefono" required>
+                                <label>Cod Tour</label>
+                                <input type="text" name="id_tour" th:field="*{id_tour}" class="form-control" readonly="readonly">
+                                <label>Nombre Tour :</label>
+                                <input type="text" name="nombre_tour" th:field="*{nombre_tour}" class="form-control" required>
+                                <label>Numero de Habitacion :</label>
+                                <input type="text" name="id_habitacion" th:field="*{id_habitacion}" class="form-control">
+                                <label>Descripcion :</label>
+                                <input type="text" name="descripcion" th:field="*{descripcion}" class="form-control">
+                                <label>Costo :</label>
+                                <input type="text" name="costo" th:field="*{costo}" class="form-control">
                                 <br>
                                 <div class="box-footer">
                                     <button class="btn btn-success">Guardar</button>

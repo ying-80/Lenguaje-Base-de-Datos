@@ -9,8 +9,8 @@
     <body>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="/">Control de Clientes</a>
             <a class="navbar-brand" href="/reservas">Control de Reservas</a>
+            <a class="navbar-brand" href="/">Control de Clientes</a>
             <a class="navbar-brand" href="/tours">Control de Tours</a>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -21,35 +21,33 @@
         </nav>
         <br>
         <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="padding-right: 50%">
-            <a class="btn btn-success" href="/nuevo">Agregar Cliente</a>
+            <a class="btn btn-success" href="/nuevoTour">Agregar Tour</a>
         </div>
         <br>
         <nav class="container text-center">
             <table class="table">
                 <thead class="thead-dark">
-                <div style="color: blue"><h1>Lista de clientes</h1></div>
+                    <div style="color: blue"><h1>Lista de Tours</h1></div>
                     <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Apellidos</th>
-                        <th scope="col">Cedula</th>
-                        <th scope="col">Correo</th>
-                        <th scope="col">Telefono</th>
+                        <th scope="col">Cod Tour</th>
+                        <th scope="col">Nombre Tour</th>
+                        <th scope="col">Numero de habitacion</th>
+                        <th scope="col">Descripcion</th>
+                        <th scope="col">Costo del Tour</th>
                         <th scope="col">Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr th:each="cliente : ${listaCliente}">
-                        <td th:text="${cliente.id}"></td>
-                        <td th:text="${cliente.nombre}"></td>
-                        <td th:text="${cliente.apellidos}"></td>
-                        <td th:text="${cliente.cedula}"></td>
-                        <td th:text="${cliente.correo}"></td>
-                        <td th:text="${cliente.telefono}"></td>
+                    <tr th:each="tours : ${listaTours}">
+                        <td th:text="${tours.id_tour}"></td>
+                        <td th:text="${tours.nombre_tour}"></td>
+                        <td th:text="${tours.id_habitacion}"></td>
+                        <td th:text="${tours.descripcion}"></td>
+                        <td th:text="${tours.costo}"></td>
                         <td>
-                            <a class="btn btn-primary" th:href="@{'/editar/' + ${cliente.id}}">Editar</a>
+                            <a class="btn btn-primary" th:href="@{'/editarTour/' + ${tours.id_tour}}">Editar</a>
                             &nbsp;
-                            <a class="btn btn-danger" th:href="@{'/eliminar/' + ${cliente.id}}">Eliminar</a>
+                            <a class="btn btn-danger" th:href="@{'/eliminarTour/' + ${tours.id_tour}}">Eliminar</a>
                         </td>
                     </tr>
 

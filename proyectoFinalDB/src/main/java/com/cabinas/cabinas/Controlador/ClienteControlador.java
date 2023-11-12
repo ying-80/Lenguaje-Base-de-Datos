@@ -2,7 +2,6 @@ package com.cabinas.cabinas.Controlador;
 
 import com.cabinas.cabinas.Modelo.Cliente;
 import com.cabinas.cabinas.Servicio.ClienteServicio;
-import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -49,7 +48,7 @@ public class ClienteControlador {
     @RequestMapping("/eliminar/{id}")
     public String eliminarCliente(@PathVariable(name="id") Integer id){
     servicio.delete(id);
-    return "redirect/:";
+    return "redirect:/";
     }
 
 }

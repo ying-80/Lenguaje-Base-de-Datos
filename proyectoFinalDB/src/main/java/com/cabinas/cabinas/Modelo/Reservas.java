@@ -26,7 +26,7 @@ public class Reservas {
     private int id_reserva;
 
 
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id_cliente;
 
 

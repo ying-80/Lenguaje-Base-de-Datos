@@ -1,9 +1,13 @@
-C:\Users\Ying\Documents\GitHub\Lenguaje-Base-de-Datos\proyectoFinalDB\src\main\java\com\cabinas\cabinas\CabinasApplication.java
 C:\Users\Ying\Documents\GitHub\Lenguaje-Base-de-Datos\proyectoFinalDB\src\main\java\com\cabinas\cabinas\Servicio\ClienteServicio.java
 C:\Users\Ying\Documents\GitHub\Lenguaje-Base-de-Datos\proyectoFinalDB\src\main\java\com\cabinas\cabinas\Controlador\ReservasControlador.java
-C:\Users\Ying\Documents\GitHub\Lenguaje-Base-de-Datos\proyectoFinalDB\src\main\java\com\cabinas\cabinas\Repositorio\ReservasRepositorio.java
 C:\Users\Ying\Documents\GitHub\Lenguaje-Base-de-Datos\proyectoFinalDB\src\main\java\com\cabinas\cabinas\Controlador\ClienteControlador.java
 C:\Users\Ying\Documents\GitHub\Lenguaje-Base-de-Datos\proyectoFinalDB\src\main\java\com\cabinas\cabinas\Servicio\ReservasServicio.java
 C:\Users\Ying\Documents\GitHub\Lenguaje-Base-de-Datos\proyectoFinalDB\src\main\java\com\cabinas\cabinas\Modelo\Cliente.java
-C:\Users\Ying\Documents\GitHub\Lenguaje-Base-de-Datos\proyectoFinalDB\src\main\java\com\cabinas\cabinas\Modelo\Reservas.java
 C:\Users\Ying\Documents\GitHub\Lenguaje-Base-de-Datos\proyectoFinalDB\src\main\java\com\cabinas\cabinas\Repositorio\ClienteRepositorio.java
+C:\Users\Ying\Documents\GitHub\Lenguaje-Base-de-Datos\proyectoFinalDB\src\main\java\com\cabinas\cabinas\Servicio\ToursServicio.java
+C:\Users\Ying\Documents\GitHub\Lenguaje-Base-de-Datos\proyectoFinalDB\src\main\java\com\cabinas\cabinas\CabinasApplication.java
+C:\Users\Ying\Documents\GitHub\Lenguaje-Base-de-Datos\proyectoFinalDB\src\main\java\com\cabinas\cabinas\Repositorio\ReservasRepositorio.java
+C:\Users\Ying\Documents\GitHub\Lenguaje-Base-de-Datos\proyectoFinalDB\src\main\java\com\cabinas\cabinas\Modelo\Tours.java
+C:\Users\Ying\Documents\GitHub\Lenguaje-Base-de-Datos\proyectoFinalDB\src\main\java\com\cabinas\cabinas\Modelo\Reservas.java
+C:\Users\Ying\Documents\GitHub\Lenguaje-Base-de-Datos\proyectoFinalDB\src\main\java\com\cabinas\cabinas\Controlador\ToursControlador.java
+C:\Users\Ying\Documents\GitHub\Lenguaje-Base-de-Datos\proyectoFinalDB\src\main\java\com\cabinas\cabinas\Repositorio\ToursRepositorio.java
